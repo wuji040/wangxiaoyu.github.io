@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快速开始 | 汪晓钰个人网站</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c5aa0;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3b82f6;
+            margin-top: 30px;
+        }
+        .step {
+            background: #f0f7ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #3b82f6;
+        }
+        .step-number {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2c5aa0;
+        }
+        .btn-outline {
+            background: white;
+            color: #3b82f6;
+            border: 2px solid #3b82f6;
+        }
+        .btn-outline:hover {
+            background: #f0f7ff;
+        }
+        .file-tree {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            font-family: monospace;
+            margin: 15px 0;
+        }
+        .important {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>汪晓钰个人网站 - 快速开始指南</h1>
+
+        <div class="important">
+            <strong>💡 重要提示：</strong> 这是为您生成的个人作品集网站，包含首页、作品集和简历三个主要页面。
+        </div>
+
+        <h2>🎯 第一步：查看网站</h2>
+
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>本地查看</strong>
+            <p>双击 <code>index.html</code> 文件，在浏览器中打开网站。</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>访问不同页面</strong>
+            <p>
+                <a href="index.html" class="btn" target="_blank">打开首页</a>
+                <a href="portfolio.html" class="btn btn-outline" target="_blank">打开作品集</a>
+                <a href="resume.html" class="btn btn-outline" target="_blank">打开简历</a>
+            </p>
+        </div>
+
+        <h2>📁 网站文件结构</h2>
+        <div class="file-tree">
+            personal_website/<br>
+            ├── index.html              # 网站首页<br>
+            ├── portfolio.html          # 作品集页面<br>
+            ├── resume.html             # 简历页面<br>
+            ├── css/<br>
+            │   └── style.css          # 样式文件<br>
+            ├── js/<br>
+            │   └── main.js            # 交互脚本<br>
+            ├── images/                # 图片目录（存放您的照片和作品）<br>
+            ├── portfolio/             # 作品集图片目录<br>
+            ├── README.md              # 详细说明文档<br>
+            ├── DEPLOYMENT.md          # 部署指南<br>
+            └── 快速开始.html          # 本文件
+        </div>
+
+        <h2>🛠️ 第二步：自定义内容</h2>
+
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>更新个人信息</strong>
+            <p>使用文本编辑器（如VSCode、记事本等）打开HTML文件，修改：</p>
+            <ul>
+                <li>姓名、联系方式</li>
+                <li>教育背景</li>
+                <li>工作经历</li>
+                <li>项目经验</li>
+                <li>技能列表</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>添加您的作品</strong>
+            <p>将您的作品图片放入 <code>images/</code> 或 <code>portfolio/</code> 目录，然后在HTML中更新图片路径。</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">3</span>
+            <strong>更换照片</strong>
+            <p>将您的证件照放入 <code>images/</code> 目录，然后在HTML中替换照片路径。</p>
+        </div>
+
+        <h2>🚀 第三步：部署到互联网</h2>
+
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>选择部署平台</strong>
+            <ul>
+                <li><strong>GitHub Pages</strong>：免费，适合技术背景用户</li>
+                <li><strong>Netlify</strong>：免费，简单拖拽即可部署</li>
+                <li><strong>Vercel</strong>：免费，快速部署</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>详细部署步骤</strong>
+            <p>请参考 <a href="DEPLOYMENT.md">DEPLOYMENT.md</a> 文件中的详细指南。</p>
+        </div>
+
+        <h2>📱 网站功能特点</h2>
+        <ul>
+            <li><strong>响应式设计</strong>：适配手机、平板、电脑所有设备</li>
+            <li><strong>现代界面</strong>：适合影视艺术专业的视觉风格</li>
+            <li><strong>完整功能</strong>：作品展示、在线简历、联系表单</li>
+            <li><strong>无需服务器</strong>：纯静态文件，可部署到任何平台</li>
+            <li><strong>易于修改</strong>：HTML/CSS/JS代码清晰，易于自定义</li>
+        </ul>
+
+        <h2>📞 技术支持</h2>
+        <p>如需帮助：</p>
+        <ol>
+            <li>查看 <code>README.md</code> 文件中的详细说明</li>
+            <li>检查浏览器控制台是否有错误信息</li>
+            <li>确保所有文件路径正确</li>
+            <li>清除浏览器缓存后重试</li>
+        </ol>
+
+        <h2>🎉 开始使用</h2>
+        <p>
+            <a href="index.html" class="btn" target="_blank">立即查看网站</a>
+            <a href="README.md" class="btn btn-outline">查看详细文档</a>
+        </p>
+
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+
+        <p style="text-align: center; color: #666; font-size: 0.9rem;">
+            汪晓钰个人作品集网站 | 影视摄影与制作专业<br>
+            最后更新：2026年4月
+        </p>
+    </div>
+</body>
+</html>
